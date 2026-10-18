@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "project": {
+    "title": "HeyPCB ESP32-S3 Sensors 2: Motion, Magnetic, Sound & Power",
+    "summary": "ESP32-S3 boards, one sensor each: IMUs, accelerometers, magnetometers, Hall and angle sensors, microphones, distance, touch, optical and current monitors. KiCad 10, JLCPCB-ready, CERN-OHL-S-2.0."
+  },
+  "boards": [
+    {
+      "slug": "adxl343",
+      "path": "boards/adxl343",
+      "title": "HeyPCB S3 ADXL343",
+      "role": "ADI ADXL343 3-axis accelerometer",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with ADI ADXL343 3-axis accelerometer. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    },
+    {
+      "slug": "kx022",
+      "path": "boards/kx022",
+      "title": "HeyPCB S3 KX022",
+      "role": "Kionix KX022-1020 3-axis accelerometer",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with Kionix KX022-1020 3-axis accelerometer. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    },
+    {
+      "slug": "lis2mdl",
+      "path": "boards/lis2mdl",
+      "title": "HeyPCB S3 LIS2MDL",
+      "role": "ST LIS2MDL 3-axis magnetometer",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with ST LIS2MDL 3-axis magnetometer. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    },
+    {
+      "slug": "lis3mdl",
+      "path": "boards/lis3mdl",
+      "title": "HeyPCB S3 LIS3MDL",
+      "role": "ST LIS3MDL 3-axis magnetometer",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with ST LIS3MDL 3-axis magnetometer. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    },
+    {
+      "slug": "lsm6ds3",
+      "path": "boards/lsm6ds3",
+      "title": "HeyPCB S3 LSM6DS3",
+      "role": "ST LSM6DS3TR-C 6-axis IMU",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with ST LSM6DS3TR-C 6-axis IMU. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    },
+    {
+      "slug": "mpu6050",
+      "path": "boards/mpu6050",
+      "title": "HeyPCB S3 MPU6050",
+      "role": "InvenSense MPU-6050 6-axis IMU",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with InvenSense MPU-6050 6-axis IMU. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    },
+    {
+      "slug": "tlv493d",
+      "path": "boards/tlv493d",
+      "title": "HeyPCB S3 TLV493D",
+      "role": "Infineon TLV493D 3D magnetic sensor",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with Infineon TLV493D 3D magnetic sensor. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    },
+    {
+      "slug": "vl53l1x",
+      "path": "boards/vl53l1x",
+      "title": "HeyPCB S3 ToF",
+      "role": "VL53L1X 4 m time-of-flight distance sensor",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with VL53L1X 4 m time-of-flight distance sensor. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    }
+  ]
+}
