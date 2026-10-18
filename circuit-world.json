@@ -1,8 +1,8 @@
 {
   "version": 1,
   "project": {
-    "title": "HeyPCB ESP32-S3 Sensors 2: Motion, Magnetic, Sound & Power",
-    "summary": "ESP32-S3 boards, one sensor each: IMUs, accelerometers, magnetometers, Hall and angle sensors, microphones, distance, touch, optical and current monitors. KiCad 10, JLCPCB-ready, CERN-OHL-S-2.0."
+    "title": "HeyPCB ESP32-S3 Sensors 2: Motion, Magnetic, Optical & Power",
+    "summary": "50 ESP32-S3 boards, one sensor each: IMUs, accelerometers, magnetometers, Hall and angle sensors, distance, touch, optical and current monitors. KiCad 10, JLCPCB-ready, CERN-OHL-S-2.0."
   },
   "boards": [
     {
@@ -48,11 +48,25 @@
       "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with Diodes AH1806 omnipolar Hall switch. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
     },
     {
+      "slug": "as5047d",
+      "path": "boards/as5047d",
+      "title": "HeyPCB S3 AS5047D",
+      "role": "ams AS5047D 14-bit magnetic encoder (SPI and ABI)",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with ams AS5047D 14-bit magnetic encoder (SPI and ABI). 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    },
+    {
       "slug": "as5600",
       "path": "boards/as5600",
       "title": "HeyPCB S3 AS5600",
       "role": "ams AS5600 12-bit magnetic angle sensor",
       "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with ams AS5600 12-bit magnetic angle sensor. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    },
+    {
+      "slug": "at42qt1010",
+      "path": "boards/at42qt1010",
+      "title": "HeyPCB S3 QT1010",
+      "role": "Microchip AT42QT1010 single-key capacitive touch sensor",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with Microchip AT42QT1010 single-key capacitive touch sensor. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
     },
     {
       "slug": "bno055",
@@ -62,6 +76,13 @@
       "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with Bosch BNO055 9-axis absolute orientation sensor. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
     },
     {
+      "slug": "bpw34",
+      "path": "boards/bpw34",
+      "title": "HeyPCB S3 BPW34",
+      "role": "Vishay BPW34 through-hole silicon photodiode light sensor",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with Vishay BPW34 through-hole silicon photodiode light sensor. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    },
+    {
       "slug": "bpw34s",
       "path": "boards/bpw34s",
       "title": "HeyPCB S3 BPW34S",
@@ -69,11 +90,39 @@
       "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with Osram BPW34S silicon photodiode light sensor. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
     },
     {
+      "slug": "cny70",
+      "path": "boards/cny70",
+      "title": "HeyPCB S3 CNY70",
+      "role": "Vishay CNY70 reflective optical sensor",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with Vishay CNY70 reflective optical sensor. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    },
+    {
+      "slug": "drv5032",
+      "path": "boards/drv5032",
+      "title": "HeyPCB S3 DRV5032",
+      "role": "TI DRV5032 ultra-low-power Hall switch",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with TI DRV5032 ultra-low-power Hall switch. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    },
+    {
       "slug": "drv5055",
       "path": "boards/drv5055",
       "title": "HeyPCB S3 DRV5055",
       "role": "TI DRV5055 ratiometric linear Hall sensor",
       "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with TI DRV5055 ratiometric linear Hall sensor. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    },
+    {
+      "slug": "drv5055a2",
+      "path": "boards/drv5055a2",
+      "title": "HeyPCB S3 DRV5055A2",
+      "role": "TI DRV5055A2 ratiometric linear Hall sensor (+-31 mT)",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with TI DRV5055A2 ratiometric linear Hall sensor (+-31 mT). 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    },
+    {
+      "slug": "flame",
+      "path": "boards/flame",
+      "title": "HeyPCB S3 FLAME",
+      "role": "Everlight PD333-3C infrared photodiode flame sensor",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with Everlight PD333-3C infrared photodiode flame sensor. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
     },
     {
       "slug": "icm20602",
@@ -104,6 +153,48 @@
       "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with TDK IIM-42652 industrial 6-axis IMU. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
     },
     {
+      "slug": "iis3dwb",
+      "path": "boards/iis3dwb",
+      "title": "HeyPCB S3 IIS3DWB",
+      "role": "ST IIS3DWB wideband vibration sensor (6 kHz)",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with ST IIS3DWB wideband vibration sensor (6 kHz). 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    },
+    {
+      "slug": "ina219",
+      "path": "boards/ina219",
+      "title": "HeyPCB S3 INA219",
+      "role": "TI INA219 load current and voltage monitor",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with TI INA219 load current and voltage monitor. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    },
+    {
+      "slug": "ina226",
+      "path": "boards/ina226",
+      "title": "HeyPCB S3 INA226",
+      "role": "TI INA226 load current, voltage and power monitor",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with TI INA226 load current, voltage and power monitor. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    },
+    {
+      "slug": "ina233",
+      "path": "boards/ina233",
+      "title": "HeyPCB S3 INA233",
+      "role": "TI INA233 PMBus current, voltage, power and energy monitor",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with TI INA233 PMBus current, voltage, power and energy monitor. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    },
+    {
+      "slug": "ina237",
+      "path": "boards/ina237",
+      "title": "HeyPCB S3 INA237",
+      "role": "TI INA237 85 V current, voltage and power monitor",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with TI INA237 85 V current, voltage and power monitor. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    },
+    {
+      "slug": "ina238",
+      "path": "boards/ina238",
+      "title": "HeyPCB S3 INA238",
+      "role": "TI INA238 85 V high-precision power monitor",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with TI INA238 85 V high-precision power monitor. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    },
+    {
       "slug": "kx022",
       "path": "boards/kx022",
       "title": "HeyPCB S3 KX022",
@@ -130,6 +221,13 @@
       "title": "HeyPCB S3 LIS2MDL",
       "role": "ST LIS2MDL 3-axis magnetometer",
       "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with ST LIS2MDL 3-axis magnetometer. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    },
+    {
+      "slug": "lis3dh",
+      "path": "boards/lis3dh",
+      "title": "HeyPCB S3 LIS3DH",
+      "role": "ST LIS3DH 3-axis accelerometer with ADC inputs",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with ST LIS3DH 3-axis accelerometer with ADC inputs. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
     },
     {
       "slug": "lis3mdl",
@@ -160,11 +258,39 @@
       "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with ST LSM6DSOX 6-axis IMU with machine-learning core. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
     },
     {
+      "slug": "mpr121",
+      "path": "boards/mpr121",
+      "title": "HeyPCB S3 MPR121",
+      "role": "NXP MPR121 12-channel capacitive touch controller",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with NXP MPR121 12-channel capacitive touch controller. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    },
+    {
+      "slug": "mpu6000",
+      "path": "boards/mpu6000",
+      "title": "HeyPCB S3 MPU-6000",
+      "role": "InvenSense MPU-6000 6-axis IMU (SPI and I2C)",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with InvenSense MPU-6000 6-axis IMU (SPI and I2C). 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    },
+    {
       "slug": "mpu6050",
       "path": "boards/mpu6050",
       "title": "HeyPCB S3 MPU6050",
       "role": "InvenSense MPU-6050 6-axis IMU",
       "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with InvenSense MPU-6050 6-axis IMU. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    },
+    {
+      "slug": "my18b20z",
+      "path": "boards/my18b20z",
+      "title": "HeyPCB S3 18B20Z",
+      "role": "MY18B20Z 1-Wire temperature sensor (SOIC-8)",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with MY18B20Z 1-Wire temperature sensor (SOIC-8). 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    },
+    {
+      "slug": "sfh320",
+      "path": "boards/sfh320",
+      "title": "HeyPCB S3 SFH320",
+      "role": "ams OSRAM SFH 320 SMD phototransistor light sensor",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with ams OSRAM SFH 320 SMD phototransistor light sensor. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
     },
     {
       "slug": "sm351lt",
@@ -181,6 +307,13 @@
       "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with SS49E linear Hall effect sensor. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
     },
     {
+      "slug": "tept4400",
+      "path": "boards/tept4400",
+      "title": "HeyPCB S3 TEPT4400",
+      "role": "Vishay TEPT4400 ambient light phototransistor",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with Vishay TEPT4400 ambient light phototransistor. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    },
+    {
       "slug": "tlv493d",
       "path": "boards/tlv493d",
       "title": "HeyPCB S3 TLV493D",
@@ -193,6 +326,13 @@
       "title": "HeyPCB S3 TMAG5111",
       "role": "TI TMAG5111 2D Hall latch (rotary encoder sensor)",
       "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with TI TMAG5111 2D Hall latch (rotary encoder sensor). 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
+    },
+    {
+      "slug": "tsop38238",
+      "path": "boards/tsop38238",
+      "title": "HeyPCB S3 TSOP38238",
+      "role": "Vishay TSOP38238 38 kHz IR remote-control receiver",
+      "summary": "ESP32-S3 (Wi-Fi + BLE, USB-C) board with Vishay TSOP38238 38 kHz IR remote-control receiver. 30 x 48 mm, 4 layers, KiCad 10. Not yet fabricated."
     },
     {
       "slug": "vl53l0x",

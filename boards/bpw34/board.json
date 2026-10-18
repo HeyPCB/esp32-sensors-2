@@ -1,0 +1,246 @@
+{
+  "name": "esp32_bpw34",
+  "title": "HeyPCB ESP32-S3 BPW34 - Vishay BPW34 through-hole silicon photodiode light sensor",
+  "revision": "A",
+  "brief": "ESP32-S3-WROOM-1-N16R8 board with USB-C (native USB), 3.3 V LDO, BOOT / RESET, and Vishay BPW34 through-hole silicon photodiode light sensor; 30 x 48 mm, 4 layers.",
+  "blocks": [
+    {
+      "block": "usb_c_data_5v",
+      "as": "usb",
+      "title": "USB-C 5 V in, native USB",
+      "nets": {
+        "USB_DP": "USB_DP",
+        "USB_DM": "USB_DM"
+      }
+    },
+    {
+      "block": "usb_esd_usblc6",
+      "as": "esd",
+      "title": "USB ESD clamp",
+      "nets": {
+        "USB_DP": "USB_DP",
+        "USB_DM": "USB_DM"
+      }
+    },
+    {
+      "block": "lipo_ldo_ap2112k",
+      "as": "ldo",
+      "title": "3.3 V LDO",
+      "nets": {
+        "VBAT": "VBUS"
+      }
+    },
+    {
+      "block": "esp32_s3_n16r8",
+      "as": "mcu",
+      "title": "ESP32-S3-WROOM-1-N16R8",
+      "nets": {
+        "EN": "EN"
+      },
+      "pinNets": {
+        "U?.13": "USB_DM",
+        "U?.14": "USB_DP",
+        "U?.27": "IO0",
+        "U?.25": "IO48",
+        "U?.39": "SNS_AN1"
+      }
+    },
+    {
+      "block": "tactile_ts1187a",
+      "as": "boot",
+      "title": "BOOT (IO0)",
+      "nets": {
+        "SIG": "IO0"
+      },
+      "values": {
+        "SW?": "BOOT"
+      }
+    },
+    {
+      "block": "tactile_ts1187a",
+      "as": "reset",
+      "title": "RESET (EN)",
+      "nets": {
+        "SIG": "EN"
+      },
+      "values": {
+        "SW?": "RESET"
+      }
+    },
+    {
+      "block": "gpio_led",
+      "as": "led_user",
+      "title": "User LED (IO48)",
+      "nets": {
+        "SIG": "IO48"
+      },
+      "values": {
+        "D?": "Blue (IO48)"
+      }
+    },
+    {
+      "block": "led_indicator",
+      "as": "led_pwr",
+      "title": "3V3 power LED",
+      "values": {
+        "D?": "Green (PWR)",
+        "R?": "2.2k"
+      }
+    },
+    {
+      "block": "sns_bpw34",
+      "as": "sns",
+      "title": "Vishay BPW34 through-hole silicon photodiode light sensor",
+      "nets": {
+        "OUT": "SNS_AN1",
+        "3V3": "3V3",
+        "GND": "GND"
+      }
+    }
+  ],
+  "pwrFlags": [
+    "GND",
+    "VBUS"
+  ],
+  "netClasses": [
+    {
+      "name": "PWR",
+      "nets": [
+        "VBUS",
+        "3V3"
+      ],
+      "track": 0.5,
+      "clearance": 0.15,
+      "via": [
+        0.6,
+        0.3
+      ],
+      "why": "the ESP32-S3's Wi-Fi bursts draw up to about 0.5 A from 3V3; 0.5 mm, with the ladder free to narrow at fine-pitch pins"
+    }
+  ],
+  "board": {
+    "width": 30.0,
+    "height": 48.0,
+    "corner_radius": 2.0,
+    "layers": 4,
+    "origin": [
+      100.0,
+      100.0
+    ],
+    "rules": {
+      "clearance": 0.15,
+      "why_clearance": "fine-pitch sensor footprints (SOT-563, 0.5 mm LGA) put their own pads 0.15 mm apart; JLCPCB multilayer builds 0.09 mm",
+      "track": 0.2,
+      "via": [
+        0.6,
+        0.3
+      ],
+      "edge_clearance": 0.5,
+      "hole_to_hole": 0.5,
+      "min_through_hole": 0.2,
+      "why_min_hole": "the module footprint's own thermal vias are 0.2 mm",
+      "min_track": 0.1,
+      "why_min_track": "Freerouting necks into fine-pitch sensor pins; JLCPCB multilayer builds 0.09 mm"
+    },
+    "planes": {
+      "In1.Cu": "GND"
+    },
+    "notes": "4 layers: F.Cu / In1 GND plane / In2 routing / B.Cu, GND poured after routing."
+  },
+  "placement": {
+    "mcu:U?": {
+      "anchor": "top-edge",
+      "antenna_overhang": true,
+      "x": 0.0,
+      "why": "antenna over the top edge, nothing under it"
+    },
+    "usb:J?": {
+      "edge": "bottom",
+      "x": 0.0,
+      "overhang": 0.6,
+      "why": "plug seats with the shell 0.6 mm proud"
+    },
+    "boot:SW?": {
+      "at": [
+        23.5,
+        29.0
+      ],
+      "why": "BOOT right, below the module"
+    },
+    "reset:SW?": {
+      "at": [
+        6.5,
+        29.0
+      ],
+      "why": "RESET left, below the module"
+    },
+    "ldo:U?": {
+      "at": [
+        6.0,
+        41.5
+      ],
+      "why": "LDO beside the USB-C, left"
+    },
+    "esd:U?": {
+      "at": [
+        21.5,
+        42.0
+      ],
+      "why": "ESD clamp on D+ / D- beside the USB-C, right"
+    },
+    "led_pwr:R?": {
+      "at": [
+        11.0,
+        33.0
+      ],
+      "why": "power LED"
+    },
+    "led_user:R?": {
+      "at": [
+        19.0,
+        33.0
+      ],
+      "why": "user LED"
+    },
+    "sns:U?": {
+      "at": [
+        15.0,
+        37.5
+      ],
+      "rot": 0,
+      "why": "sensor in the middle, below the module"
+    }
+  },
+  "route": {
+    "passes": 30,
+    "fanout": true,
+    "solve_s": 300,
+    "why": "default ladder"
+  },
+  "stitch_pitch": 5.0,
+  "silk": {
+    "words": {
+      "boot:SW?": "BOOT",
+      "reset:SW?": "RST",
+      "usb:J?": "USB-C",
+      "sns:U?": "LIGHT"
+    },
+    "title": [
+      {
+        "text": "HeyPCB S3 BPW34",
+        "y": 22.0,
+        "size": 1.0,
+        "bold": true
+      },
+      {
+        "text": "rev {revision}  heypcb-kicad",
+        "y": 24.0,
+        "size": 0.8
+      }
+    ]
+  },
+  "captions": {
+    "place_3d": "ESP32-S3 module at the top edge, Vishay BPW34 through-hole silicon photodiode light sensor in the middle, USB-C at the bottom.",
+    "done_3d": "ESP32-S3 + Vishay BPW34 through-hole silicon photodiode light sensor."
+  }
+}
